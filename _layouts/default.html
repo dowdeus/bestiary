@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link href="{{ 'assets/css/style.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/css/styles.css' | relative_url }}" rel="stylesheet">
     {% feed_meta %}
     {% seo %}
   </head>
   <body>
     {% include navigation.html %}
-    {{ content }}
+    <div class="content-wrapper">
+      {{ content }}
+    </div>
   </body>
 </html>

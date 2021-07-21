@@ -1,0 +1,28 @@
+body {
+    background-color: #090D10;
+    color: #E0E0E0;
+}
+
+.content-wrapper {
+    margin: 0.8rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #E0E0E0;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h2, h3 {
+    margin: 0rem 1rem;
+}
+
+p {
+    margin: 1rem;
+}

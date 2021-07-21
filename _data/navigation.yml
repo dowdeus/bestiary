@@ -1,6 +1,12 @@
 - name: Home
   link: /
 - name: Books
-  link: /books
-- name: Authors
-  link: /authors
+  link: /books/
+- name: Publishers
+  link: /publishers/
+- name: Bestiary
+  link: /bestiary/
+- name: Gods
+  link: /gods/
+- name: Concepts
+  link: /concepts/

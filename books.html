@@ -2,13 +2,21 @@
 layout: default
 title: Books
 ---
-<h1>Latest Books added</h1>
+<h1>Books</h1>
 
-<ul>
+<ul class="books-container">
   {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
+    <li class="books-wrapper">
+      <a href="{{ post.url | relative_url }}">
+        <div class="books-title-wrapper">
+          <div class="books-title-inner">
+            <img class="books-svg" alt="book" src="{{ 'assets/images/agenda.svg' | relative_url}}">
+            <h2 class="books-title">{{ post.title }}</h2>
+          </div>
+          <span class="books-author">{{ post.author }}</span>
+        </div>
+        <span class="books-excerpt">{{ post.excerpt }}</span>
+      </a>
     </li>
   {% endfor %}
 </ul>

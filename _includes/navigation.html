@@ -1,7 +1,9 @@
-<nav>
+<nav class="nav-container">
+  <ul class="nav-wrapper">
     {% for item in site.data.navigation %}
-      <a href="{{ item.link | relative_url }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
-        {{ item.name }}
-      </a>
+    <li class="nav-item">
+      <a href="{{ item.link | relative_url }}" {% if page.url == item.link %}class="current-link"{% else %}class="nav-link"{% endif %}>{{ item.name }}</a>
+    </li>
     {% endfor %}
+  </ul>
 </nav>

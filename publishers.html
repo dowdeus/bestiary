@@ -1,0 +1,15 @@
+---
+layout: default
+title: Publishers
+---
+<h1 class="article-header">Publishers</h1>
+
+<ul>
+  {% for author in site.authors %}
+    <li class="article-container">
+        <h2><a class="publisher-link" href="{{ author.url | relative_url }}">{{ author.name }}</a></h2>
+      <h3 class="publisher-name">{{ author.position }}</h3>
+      <p>{{ author.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
