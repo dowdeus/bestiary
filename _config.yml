@@ -37,7 +37,7 @@ defaults:
       path: ""
       type: "publishers"
     values:
-      layout: "author"
+      layout: "publisher"
   - scope:
       path: _posts
       type: "books"
