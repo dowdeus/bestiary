@@ -4,19 +4,25 @@ title: Books
 ---
 <h1>Books</h1>
 
-<ul class="books-container">
-  {% for post in site.posts %}
-    <li class="books-wrapper">
-      <a href="{{ post.url | relative_url }}">
-        <div class="books-title-wrapper">
-          <div class="books-title-inner">
-            <img class="books-svg" alt="book" src="{{ 'assets/images/agenda.svg' | relative_url}}">
-            <h2 class="books-title">{{ post.title }}</h2>
-          </div>
-          <span class="books-author">{{ post.author }}</span>
-        </div>
-        <span class="books-excerpt">{{ post.excerpt }}</span>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+<table class="table-container">
+  <thead>
+    <tr class="table-header">
+      <th class="table-head-item"></th>
+      <th class="table-head-item">Name</th>
+      <th class="table-head-item">Publisher</th>
+      <th class="table-head-item">Cycle</th>
+      <th class="table-head-item">Category</th>
+    </tr>
+  </thead>
+    {% for post in site.posts %}
+    <tbody>
+      <tr class="table-hover table-row">
+        <td class="table-item-icon"><img class="books-svg" alt="book" src="{{ 'assets/images/agenda.svg' | relative_url}}"></td>
+        <td class="table-item"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></td>
+        <td class="table-item"><a href="{{ post.url | relative_url }}">{{ post.author }}</a></td>
+        <td class="table-item"><a href="{{ post.url | relative_url }}">{{ post.real_date }}</a></td>
+        <td class="table-item"><a href="{{ post.url | relative_url }}">{{ post.category }}</a></td>
+      </tr>
+    </tbody>
+    {% endfor %}
+</table>

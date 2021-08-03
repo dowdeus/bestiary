@@ -34,6 +34,35 @@
 
 // books.html
 
+.table-container {
+    width: 99%;
+    margin: 0rem 1rem;
+    background-color: #171B22;
+    text-align: justify;
+}
+
+.table-header {
+    border-bottom: 3px solid #0A6F64;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.table-head-item {
+    padding: 0.6rem 0;
+}
+
+.table-hover:hover {
+    background-color: #0A6F64;
+}
+
+.table-item {
+    padding: 0.6rem 0;
+}
+
+.table-item-icon {
+    padding: 0.6rem;
+}
+
 .books-container {
     display: flex;
     flex-direction: row;
