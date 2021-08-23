@@ -1,6 +1,6 @@
 .nav-container {
     width: 100%;
-    background-color: #171B22;
+    background-color: #36393F;
     display: flex;
 }
 
@@ -20,7 +20,7 @@
     color: #E0E0E0;
     display: inline-block;
     padding: 0.6rem;
-    border-bottom: 3px solid #171B22;
+    border-bottom: 3px solid #36393F;
     &:hover {
         text-decoration: none;
         border-bottom: 3px solid #0A6F64;
@@ -37,7 +37,7 @@
 .table-container {
     width: 99%;
     margin: 0rem 1rem;
-    background-color: #171B22;
+    background-color: #36393F;
     text-align: justify;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .books-wrapper {
-    background-color: #171B22;
+    background-color: #36393F;
     border-top: 3px solid #0A6F64;
     width: 30%;
     padding: 1rem;
@@ -111,7 +111,7 @@
 // article content wrapper
 
 .article-container {
-    background-color: #171B22;
+    background-color: #36393F;
     color: #E0E0E0;
     border-top: 3px solid #0A6F64;
     margin: 0rem 1rem;
@@ -143,4 +143,32 @@
     color: #c6c6c6;
     font-weight: 200;
     font-size: 16px;
+}
+
+// table styles
+
+table {
+    margin: 1rem;
+    font-size: 16px;
+}
+thead {
+    text-align: justify;
+}
+td {
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@font-face {
+    font-family: 'AngerthasMoria';
+    src: url('AngerthasMoria-lgLAD.ttf');
+}
+
+.custom-font {
+    font-size: 1.6rem;
+    font-family: 'AngerthasMoria', 'Georgia', serif;
+}
+.custom-font-push {
+    padding-right: 60px;
 }

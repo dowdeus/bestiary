@@ -4,7 +4,9 @@ layout: default
 <h1 class="article-header">{{ page.title }}</h1>
 <div class="article-container">
   <p>
-      {{ page.real_date }}
+      Publisher: {{ page.author }} <br>
+      Category: {{ page.category }} <br>
+      Published: {{ page.real_date }}
       {% assign author = site.authors | where: 'short_name', page.author | first %}
       {% if author %}
         <a href="{{ author.url | relative_url }}">{{ author.name }}</a>

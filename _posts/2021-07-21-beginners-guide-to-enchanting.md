@@ -1,7 +1,9 @@
 ---
 layout: book
-author: Glengo & Co.
-position: Doug Yosef
+author: glengoandco
+real_date: 18 ad
+published: true
+category: basics
 ---
 A banana is an edible fruit – botanically a berry – produced by several kinds
 of large herbaceous flowering plants in the genus Musa.
